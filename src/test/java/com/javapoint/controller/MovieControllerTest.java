@@ -32,7 +32,7 @@ public class MovieControllerTest {
 	    //RESTTemplate Object
 	    private RestTemplate restTemplate;
 	     
-	    //User ID 
+	    //Movie ID 
 	    private long movieId;
 	    // Create Response Entity - Stores HTTPStatus Code, Response Body, etc
 	    private ResponseEntity<String> response;
@@ -72,7 +72,7 @@ public class MovieControllerTest {
 	        System.out.println("movieId is :" + movieId);
 	        // Check if the added User is present in the response body.
 	        Assert.assertTrue(movieId>0);
-	        // System.out.println(propertyFile.get("UserAddResBody"));
+	        // System.out.println(propertyFile.get("MovieAddResBody"));
 	        // Check if the status code is 201
 	        assertEquals(response.getStatusCode(), HttpStatus.OK);
 	        logger.info("user is Added successfully userId:"+movieId);
