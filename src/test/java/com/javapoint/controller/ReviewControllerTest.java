@@ -65,7 +65,7 @@ public class ReviewControllerTest {
 	        System.out.println("review Id is :" + reviewId);
 	        // Check if the added Review is present in the response body.
 	        Assert.assertTrue(reviewId>0);
-	        // System.out.println(propertyFile.get("UserAddResBody"));
+	        // System.out.println(propertyFile.get("ReviewAddResBody"));
 	        // Check if the status code is 201
 	        assertEquals(response.getStatusCode(), HttpStatus.OK);
 	        logger.info("user is Added successfully reviewId:"+reviewId);
